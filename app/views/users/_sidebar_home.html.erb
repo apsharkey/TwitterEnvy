@@ -22,7 +22,10 @@
 		  <span id="last_post_time_ago">
 		    <%= link_to time_ago_in_words(current_user.posts.first.created_at)+" ago", user_path(current_user) %> 
 			</span>
+		<span id="last_post_content">
+		    <%= raw(wrap(linkup_mentions_and_hashtags(current_user.posts.first.content).html_safe)) %>
 
+		  </span>
 		<% end %>
 	</div>
 </div>

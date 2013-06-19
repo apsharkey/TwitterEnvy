@@ -25,7 +25,7 @@
 
 	
 			<!-- POST -->
-			<%= raw(wrap_text(linkup_mentions_and_hashtags(CGI::unescapeHTML(feed_item.content)).html_safe)) %>
+			<%= raw(wrap_text(linkup_mentions_and_hashtags(mention.content).html_safe)) %>
 			<br />
 			<!-- TIMESTAMP -->
 			<div class="feed_timestamp_container">
