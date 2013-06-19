@@ -38,7 +38,6 @@ class User < ActiveRecord::Base
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, 
-         :encryptable
          
   # has_attached_file :photo, :styles => { :thumb => "48x48#", :small => "128x128#"}, :processors => [:cropper],
   #  :content_type => 'image/jpeg/png',

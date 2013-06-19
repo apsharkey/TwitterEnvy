@@ -10,8 +10,6 @@ gem 'will_paginate'
 gem 'rdoc', ">= 2.4.2"
 gem 'rake'
 gem 'aws-sdk'
-gem 'sunspot_rails', '~> 1.3.0'
-gem 'sunspot_solr'
 gem 'friendly_id', "4"
 
 group :production do
@@ -25,7 +23,8 @@ group :development do
   gem 'webrat'
   gem "rspec-rails"
   gem 'devise', '1.1.7'
-
+  gem 'sunspot_rails', '~> 1.3.0'
+  gem 'sunspot_solr'
 end
 
 group :test do
