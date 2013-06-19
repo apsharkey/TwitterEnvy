@@ -6,10 +6,11 @@
 			<% break if i > 9 %>
 			<% trend = grab_trend(p.content) %>
 			<% unless trend.blank? %>
-			  <% t = truncate(trend.to_s, :length => 19) %>
+			  <% t = trend.join %>
 			  <%= link_to t, "/search/"+t %><br />
 			  <% i = i + 1 %>
 			<% end %>
 	   <% end %>
 	   <% end %>
 </div>
+  

@@ -13,6 +13,7 @@ gem 'rake'
 gem 'aws-sdk'
 gem 'sunspot_rails'
 gem 'sunspot_solr'
+gem 'friendly_id', "4"
 
 group :production do
   gem 'pg'

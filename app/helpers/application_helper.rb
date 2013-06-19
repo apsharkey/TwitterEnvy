@@ -29,7 +29,6 @@ module ApplicationHelper
     text.gsub!(/@([\w]+)(\W)?/, '<a href="/users/\1">@\1</a>\2')
     text.gsub!(/#([\w]+)(\W)?/, '<a href="/search/\1">#\1</a>\2')
     text.gsub!(/^((http|https?:\/\/)?((?:[-a-z0-9]+\.)+[a-z]{2,}))$/, '<a href="/\1">\1</a>')
-    
     text
   end
 

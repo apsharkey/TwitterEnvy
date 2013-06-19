@@ -31,7 +31,9 @@
 
 			<!-- POST -->
 			<span class="repost_text">
-			<%= wrap_text(linkup_mentions_and_hashtags.highlight_search_query((result.content)).html_safe) %>
+			<%= raw(wrap_text(linkup_mentions_and_hashtags(feed_item.content).html_safe)) %>
+
+
 
 			</span>
 			<br />
@@ -76,13 +78,9 @@
 
 	
 			<!-- POST -->
-			<% thepost = wrap_text(linkup_mentions_and_hashtags(result.content).html_safe) %>
+			<%= raw(wrap_text(linkup_mentions_and_hashtags(result.content).html_safe)) %>
 
-			<% if params[:q] %>
-				<%= highlight_search_query(thepost, params[:q]) %>
-			<% elsif params[:query] %>
-				<%= highlight_search_query(thepost, params[:query]) %>
-			<% end %>
+				
 			<br />
 			<!-- TIMESTAMP -->
 			<div class="feed_timestamp_container">

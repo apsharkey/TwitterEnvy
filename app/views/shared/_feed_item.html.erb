@@ -31,7 +31,7 @@
 	
 			<!-- POST -->
 			<span class="repost_text">
-			<%= wrap_text(linkup_mentions_and_hashtags(feed_item.content).html_safe) %>
+			<%= raw(wrap_text(linkup_mentions_and_hashtags(feed_item.content).html_safe)) %>
 			</span>
 			<br />
 			
@@ -90,7 +90,7 @@
 	
 			<!-- POST -->
 			<div class="post_content">
-			<%= wrap_text(linkup_mentions_and_hashtags(feed_item.content).html_safe) %>
+			<%= raw(wrap_text(linkup_mentions_and_hashtags(feed_item.content).html_safe)) %>
 			</div>
 
 			<!-- TIMESTAMP -->

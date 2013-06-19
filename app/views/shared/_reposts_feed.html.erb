@@ -33,7 +33,7 @@
 
 				<!-- POST -->
 				<span class="repost_text">
-				<%= wrap_text(linkup_mentions_and_hashtags(repost.content).html_safe) %>
+			<%= raw(wrap_text(linkup_mentions_and_hashtags(CGI::unescapeHTML(feed_item.content)).html_safe)) %>
 				</span>
 				<br />
 
