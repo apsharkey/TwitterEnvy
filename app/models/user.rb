@@ -39,7 +39,7 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, 
          
-   has_attached_file :photo, :styles => { :thumb => "48x48#", :small => "128x128#"}, :processors => [:cropper],
+    has_attached_file :photo, :styles => { :thumb => []"48x48#", :png], :small => ["128x128#", :png]}, :processors => [:cropper],
     :content_type => 'image/jpeg/png',
     :storage => :s3,
     :bucket         => ENV['S3_BUCKET'],
