@@ -36,7 +36,7 @@ class User < ActiveRecord::Base
   
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
-  devise :database_authenticable, :registerable,
+  devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
          
     has_attached_file :photo, :styles => { :thumb => "48x48#", :small => "128x128#"}, :processors => [:cropper],
