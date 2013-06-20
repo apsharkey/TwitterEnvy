@@ -3,7 +3,7 @@ source 'http://rubygems.org'
 gem 'rails', '3.0.9'
 gem 'devise', '1.1.7'
 gem 'jquery-rails'
-gem "paperclip"
+gem "paperclip", '2.3.8'
 gem "friendly_id", "4"
 gem 'aws-s3'
 gem 'will_paginate'
