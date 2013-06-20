@@ -73,11 +73,11 @@ class User < ActiveRecord::Base
   
   after_update :reprocess_avatar, :if => :cropping?
   
-  searchable do
-    text :username
-    text :first_name
-    text :last_name
-  end
+  #searchable do
+  #  text :username
+  #  text :first_name
+  #  text :last_name
+  #end
 
   
   def feed
