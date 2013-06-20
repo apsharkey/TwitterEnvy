@@ -11,6 +11,7 @@ gem 'rdoc', ">= 2.4.2"
 gem 'rake'
 gem "aws-s3", :require => "aws/s3"
 gem 'friendly_id', "4"
+ gem 'sunspot_rails', '~> 1.3.0'
 
 group :production do
   gem 'pg'
