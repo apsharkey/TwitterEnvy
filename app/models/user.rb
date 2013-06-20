@@ -43,9 +43,8 @@ class User < ActiveRecord::Base
     :content_type => 'image/jpeg/png',
     :storage => :s3,
     :bucket         => ENV['S3_BUCKET'],
-    :s3_credentials => { :access_key_id     => ENV['S3_KEY'], 
-                         :secret_access_key => ENV['S3_SECRET'] },
-  :path => "/:style/:id/:normalized_photo_file_name"
+    :s3_credentials => { :access_key_id => ENV['S3_KEY'], :secret_access_key => ENV['S3_SECRET'] },
+    :path => "/:style/:id/:normalized_photo_file_name"
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me,
