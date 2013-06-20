@@ -35,10 +35,6 @@ GEM
       builder
       mime-types
       xml-simple
-    aws-sdk (1.11.1)
-      json (~> 1.4)
-      nokogiri (>= 1.4.4)
-      uuidtools (~> 2.1)
     bcrypt-ruby (2.1.4)
     builder (2.1.2)
     devise (1.1.7)
@@ -124,7 +120,6 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
-    uuidtools (2.1.4)
     warden (1.0.6)
       rack (>= 1.0)
     webrat (0.7.3)
@@ -140,7 +135,6 @@ PLATFORMS
 DEPENDENCIES
   annotate
   aws-s3
-  aws-sdk
   devise (= 1.1.7)
   factory_girl_rails
   friendly_id (= 4)
