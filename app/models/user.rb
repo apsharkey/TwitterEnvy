@@ -39,13 +39,13 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable, 
          
-  # has_attached_file :photo, :styles => { :thumb => "48x48#", :small => "128x128#"}, :processors => [:cropper],
-  #  :content_type => 'image/jpeg/png',
-  #  :storage => :s3,
-  #  :bucket         => ENV['S3_BUCKET'],
-  #  :s3_credentials => { :access_key_id     => ENV['S3_KEY'], 
-  #                       :secret_access_key => ENV['S3_SECRET'] },
-  #  :path => "/:style/:id/:normalized_photo_file_name"
+   has_attached_file :photo, :styles => { :thumb => "48x48#", :small => "128x128#"}, :processors => [:cropper],
+    :content_type => 'image/jpeg/png',
+    :storage => :s3,
+    :bucket         => ENV['S3_BUCKET'],
+    :s3_credentials => { :access_key_id     => ENV['S3_KEY'], 
+                         :secret_access_key => ENV['S3_SECRET'] },
+  :path => "/:style/:id/:normalized_photo_file_name"
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me,
