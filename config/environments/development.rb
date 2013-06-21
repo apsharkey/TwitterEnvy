@@ -27,5 +27,8 @@ TwitterEnvy::Application.configure do
   # Added by APS on 2/12/11 as part of the Devise gem installation instructions
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   
+  ENV['S3_KEY']            = 'AKIAIPHABX5TQC2ACBHA'
+  ENV['S3_SECRET']         = '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'
+  ENV['S3_BUCKET']         = 'apsharkey'
 end
 

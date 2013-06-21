@@ -46,11 +46,9 @@ TwitterEnvy::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
-  
-  
+    
   ENV['S3_KEY']            = 'AKIAIPHABX5TQC2ACBHA'
   ENV['S3_SECRET']         = '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'
   ENV['S3_BUCKET']         = 'apsharkey'
-  Sunspot.config.solr.url = ENV['http://index.websolr.com/solr/5037fae557d'] 
   
 end
