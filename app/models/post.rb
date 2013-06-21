@@ -12,9 +12,9 @@ class Post < ActiveRecord::Base
   
   scope :from_users_followed_by, lambda { |user| followed_by(user) }
 
-  searchable do
-    text :content
-  end
+  # searchable do
+  #  text :content
+  # end
   
   
       
