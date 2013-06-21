@@ -12,7 +12,7 @@ class PostsController < ApplicationController
     #    @theuser = @search.results
       
       # @notification = @theuser[0].notifications.create(:content => @post.content.strip, :author => current_user.username)
-    end
+    # end
     
     if @post.save
       redirect_to root_path
