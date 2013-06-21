@@ -4,12 +4,12 @@ class PostsController < ApplicationController
   def create
     @post = current_user.posts.build(params[:post])
     
-    if grab_user_reference(@post.content)
-        query = grab_user_reference(@post.content)
-        @search = User.search do
-          keywords query
-        end
-        @theuser = @search.results
+    # if grab_user_reference(@post.content)
+    #    query = grab_user_reference(@post.content)
+    #    @search = User.search do
+    #      keywords query
+    #    end
+    #    @theuser = @search.results
       
       # @notification = @theuser[0].notifications.create(:content => @post.content.strip, :author => current_user.username)
     end
